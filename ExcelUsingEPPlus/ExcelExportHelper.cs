@@ -72,7 +72,7 @@ namespace ExcelUsingEPPlus
                 //是否显示行编号
                 if (showSrNo)
                 {
-                    DataColumn dataColumn = dataTable.Columns.Add("#", typeof(int));
+                    DataColumn dataColumn = dataTable.Columns.Add("序号", typeof(int));
                     dataColumn.SetOrdinal(0);
                     int index = 1;
                     foreach (DataRow item in dataTable.Rows)
